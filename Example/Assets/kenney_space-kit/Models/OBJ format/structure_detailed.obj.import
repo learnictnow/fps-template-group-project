@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dtd0ul2u3jjj2"
+path="res://.godot/imported/structure_detailed.obj-05132d281a7c66d8daa1f55c880d4b95.mesh"
+
+[deps]
+
+files=["res://.godot/imported/structure_detailed.obj-05132d281a7c66d8daa1f55c880d4b95.mesh"]
+
+source_file="res://Example/Assets/kenney_space-kit/Models/OBJ format/structure_detailed.obj"
+dest_files=["res://.godot/imported/structure_detailed.obj-05132d281a7c66d8daa1f55c880d4b95.mesh", "res://.godot/imported/structure_detailed.obj-05132d281a7c66d8daa1f55c880d4b95.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

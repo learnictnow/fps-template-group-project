@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://t4eb72lghhcs"]
+
+[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="1_6rwdk"]
+[ext_resource type="Script" path="res://Example/LevelSelectRoom/LevelSelectRoom.gd" id="1_pa0ev"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_svkqy"]
+size = Vector2(55, 55)
+
+[node name="LevelSelectRoom" type="Node3D"]
+script = ExtResource("1_pa0ev")
+
+[node name="Room" type="Node" parent="."]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="Room"]
+use_collision = true
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="Room/CSGCombiner3D"]
+mesh = SubResource("PlaneMesh_svkqy")
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="Room/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 2.1, 0, 0, 0, 1, 0, 0, 0)
+inner_radius = 25.0
+outer_radius = 30.0
+sides = 64
+ring_sides = 32
+smooth_faces = false
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Room"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 25, 0)
+
+[node name="Player" parent="." node_paths=PackedStringArray("start_Marker3D") instance=ExtResource("1_6rwdk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1579, 0)
+default_speed = 5.0
+running_speed_multiplier = 2.0
+jump_velocity = 4.5
+mouse_sensitivity = 0.002
+start_Marker3D = NodePath("../Marker3DStartPosition")
+
+[node name="Marker3DStartPosition" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 15)

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://u47u4wq41h1a"
+path="res://.godot/imported/rail_corner.obj-9b7bbf959f9a748549408a02ba8ef434.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rail_corner.obj-9b7bbf959f9a748549408a02ba8ef434.mesh"]
+
+source_file="res://Example/Assets/kenney_space-kit/Models/OBJ format/rail_corner.obj"
+dest_files=["res://.godot/imported/rail_corner.obj-9b7bbf959f9a748549408a02ba8ef434.mesh", "res://.godot/imported/rail_corner.obj-9b7bbf959f9a748549408a02ba8ef434.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

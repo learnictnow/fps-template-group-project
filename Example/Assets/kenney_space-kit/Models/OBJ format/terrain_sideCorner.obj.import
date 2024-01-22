@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://tc6kb3bslv2i"
+path="res://.godot/imported/terrain_sideCorner.obj-8be153762f6cc39e588eaa8e1a614e39.mesh"
+
+[deps]
+
+files=["res://.godot/imported/terrain_sideCorner.obj-8be153762f6cc39e588eaa8e1a614e39.mesh"]
+
+source_file="res://Example/Assets/kenney_space-kit/Models/OBJ format/terrain_sideCorner.obj"
+dest_files=["res://.godot/imported/terrain_sideCorner.obj-8be153762f6cc39e588eaa8e1a614e39.mesh", "res://.godot/imported/terrain_sideCorner.obj-8be153762f6cc39e588eaa8e1a614e39.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

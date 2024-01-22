@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cqwpicbsci2nr"
+path="res://.godot/imported/platform_low.obj-4eaec1733b2bcf109d96b168147718de.mesh"
+
+[deps]
+
+files=["res://.godot/imported/platform_low.obj-4eaec1733b2bcf109d96b168147718de.mesh"]
+
+source_file="res://Example/Assets/kenney_space-kit/Models/OBJ format/platform_low.obj"
+dest_files=["res://.godot/imported/platform_low.obj-4eaec1733b2bcf109d96b168147718de.mesh", "res://.godot/imported/platform_low.obj-4eaec1733b2bcf109d96b168147718de.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

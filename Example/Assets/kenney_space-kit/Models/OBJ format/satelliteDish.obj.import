@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cx6ikgeu6ggiq"
+path="res://.godot/imported/satelliteDish.obj-017890b2aa09e528e609fbaa6167de3e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/satelliteDish.obj-017890b2aa09e528e609fbaa6167de3e.mesh"]
+
+source_file="res://Example/Assets/kenney_space-kit/Models/OBJ format/satelliteDish.obj"
+dest_files=["res://.godot/imported/satelliteDish.obj-017890b2aa09e528e609fbaa6167de3e.mesh", "res://.godot/imported/satelliteDish.obj-017890b2aa09e528e609fbaa6167de3e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

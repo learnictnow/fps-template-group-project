@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsdcd0pfxyxw8"
+path="res://.godot/imported/machine_barrelLarge.obj-041f3f407abd84e23a4f244ac73a4686.mesh"
+
+[deps]
+
+files=["res://.godot/imported/machine_barrelLarge.obj-041f3f407abd84e23a4f244ac73a4686.mesh"]
+
+source_file="res://Example/Assets/kenney_space-kit/Models/OBJ format/machine_barrelLarge.obj"
+dest_files=["res://.godot/imported/machine_barrelLarge.obj-041f3f407abd84e23a4f244ac73a4686.mesh", "res://.godot/imported/machine_barrelLarge.obj-041f3f407abd84e23a4f244ac73a4686.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
