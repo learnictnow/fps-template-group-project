@@ -1,10 +1,29 @@
-[gd_scene load_steps=4 format=3 uid="uid://t4eb72lghhcs"]
+[gd_scene load_steps=9 format=3 uid="uid://t4eb72lghhcs"]
 
 [ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="1_6rwdk"]
 [ext_resource type="Script" path="res://Example/LevelSelectRoom/LevelSelectRoom.gd" id="1_pa0ev"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_svkqy"]
 size = Vector2(55, 55)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lulii"]
+albedo_color = Color(0, 0.74902, 1, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_d44yc"]
+material = SubResource("StandardMaterial3D_lulii")
+text = "Mr Thawley"
+font_size = 48
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_y236e"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_txs1g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aowns"]
+transparency = 1
+albedo_color = Color(0.0235294, 0.360784, 0.560784, 0.709804)
+emission_enabled = true
+emission = Color(0.0235294, 0.376471, 0.658824, 1)
+emission_energy_multiplier = 2.68
 
 [node name="LevelSelectRoom" type="Node3D"]
 script = ExtResource("1_pa0ev")
@@ -30,11 +49,32 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 25,
 
 [node name="Player" parent="." node_paths=PackedStringArray("start_Marker3D") instance=ExtResource("1_6rwdk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1579, 0)
-default_speed = 5.0
-running_speed_multiplier = 2.0
-jump_velocity = 4.5
-mouse_sensitivity = 0.002
+visible = false
 start_Marker3D = NodePath("../Marker3DStartPosition")
 
 [node name="Marker3DStartPosition" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 15)
+
+[node name="LevelDoors" type="Node3D" parent="."]
+
+[node name="MrThawley" type="Marker3D" parent="LevelDoors"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 5)
+
+[node name="Mr Thawley" type="CSGMesh3D" parent="LevelDoors/MrThawley"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 1.3, 0)
+mesh = SubResource("TextMesh_d44yc")
+
+[node name="Area3DMrThawley" type="Area3D" parent="LevelDoors/MrThawley"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LevelDoors/MrThawley/Area3DMrThawley"]
+shape = SubResource("SphereShape3D_y236e")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LevelDoors/MrThawley/Area3DMrThawley"]
+mesh = SubResource("SphereMesh_txs1g")
+surface_material_override/0 = SubResource("StandardMaterial3D_aowns")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LevelDoors/MrThawley"]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, -2, 0, 0)
+
+[connection signal="body_entered" from="LevelDoors/MrThawley/Area3DMrThawley" to="." method="_on_area_3d_mr_thawley_body_entered"]

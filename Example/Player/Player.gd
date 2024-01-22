@@ -12,8 +12,11 @@ var player_deaths = 0
 var time_elapsed = 0.0
 @export var game_end_time = 5
 @export var player_ammo = 3
+@export var max_ammo = 3
 
 @export var ray_length = 10
+
+@export var time_paused: bool = false
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -49,6 +52,8 @@ func _physics_process(delta):
 
 
 func _process(delta):
+	if time_paused:
+		return
 	# Update the Timer HUD
 	time_elapsed += delta
 	#$PlayerHUD/LabelTimer.text = "%2.2f" % time_elapsed
@@ -87,6 +92,10 @@ func _input(event):
 
 func death():
 	player_deaths += 1
+	player_ammo = max_ammo
+	$PlayerHUD/LabelDeaths.text = " Deaths: " + str(player_deaths)
+	$PlayerHUD/LabelAmmo.text = " Ammo: " + str(player_ammo)
+	global_position = start_Marker3D.global_position
 	
 func primary_fire():
 	if player_ammo > 0:
@@ -122,10 +131,13 @@ func secondary_fire():
 
 func pickup_ammo():
 	player_ammo += 1
-	if player_ammo > 3:
-		player_ammo = 3
+	if player_ammo > max_ammo:
+		player_ammo = max_ammo
 	$PlayerHUD/LabelAmmo.text = " Ammo: " + str(player_ammo)
 	
 func pickup_time():
 	time_elapsed -= 5
 	$PlayerHUD/LabelTimer.text = "%2.2f" % (GameManager.game_length - time_elapsed)
+
+func set_time_pause(pause):
+	time_paused = pause

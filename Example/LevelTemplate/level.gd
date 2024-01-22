@@ -4,10 +4,6 @@ extends Node3D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	GameManager.previous_scene = scene_file_path
-	
-	if $Player.has_method("set_time_pause"):
-		$Player.set_time_pause(true)
-	
 	pass # Replace with function body.
 
 
@@ -16,7 +12,9 @@ func _process(delta):
 	pass
 
 
-func _on_area_3d_mr_thawley_body_entered(body):
+func _on_area_3d_body_entered(body):
 	if body.is_in_group("Player"):
-		get_tree().change_scene_to_file("res://Example/Level/level_MrThawley.tscn")
+		#body.global_position = $Marker3DPlayerSpawn.global_position
+		if body.has_method("death"):
+			body.death()
 	pass # Replace with function body.
