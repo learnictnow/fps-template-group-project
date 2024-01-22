@@ -1,9 +1,10 @@
 extends Node3D
 
-
+@export var level_name:String
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print("Currently playing: " + level_name)
 	GameManager.previous_scene = scene_file_path
 	pass # Replace with function body.
 

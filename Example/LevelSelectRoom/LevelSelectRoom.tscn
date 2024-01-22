@@ -78,32 +78,32 @@ transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 
 [node name="LevelEntryPoint" parent="LevelDoors/A" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
 leveltitle = "A1"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/A/1/level.tscn"
 
 [node name="LevelEntryPoint2" parent="LevelDoors/A" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9)
 leveltitle = "A2"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/A/2/level.tscn"
 
 [node name="LevelEntryPoint3" parent="LevelDoors/A" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
 leveltitle = "A3"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/A/3/level.tscn"
 
 [node name="LevelEntryPoint4" parent="LevelDoors/A" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
 leveltitle = "A4"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/A/4/level.tscn"
 
 [node name="LevelEntryPoint5" parent="LevelDoors/A" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19)
 leveltitle = "A5"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/A/5/level.tscn"
 
 [node name="LevelEntryPoint6" parent="LevelDoors/A" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22)
 leveltitle = "A6"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/A/6/level.tscn"
 
 [node name="B" type="Node3D" parent="LevelDoors"]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 0, 0, 0)
@@ -111,32 +111,32 @@ transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 
 [node name="LevelEntryPoint" parent="LevelDoors/B" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
 leveltitle = "B1"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/B/1/level.tscn"
 
 [node name="LevelEntryPoint2" parent="LevelDoors/B" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9)
 leveltitle = "B2"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/B/2/level.tscn"
 
 [node name="LevelEntryPoint3" parent="LevelDoors/B" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
 leveltitle = "B3"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/B/3/level.tscn"
 
 [node name="LevelEntryPoint4" parent="LevelDoors/B" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
 leveltitle = "B4"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/B/4/level.tscn"
 
 [node name="LevelEntryPoint5" parent="LevelDoors/B" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19)
 leveltitle = "B5"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/B/5/level.tscn"
 
 [node name="LevelEntryPoint6" parent="LevelDoors/B" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22)
 leveltitle = "B6"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/B/6/level.tscn"
 
 [node name="C" type="Node3D" parent="LevelDoors"]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0)
@@ -144,32 +144,32 @@ transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0)
 [node name="LevelEntryPoint" parent="LevelDoors/C" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
 leveltitle = "C1"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/C/1/level.tscn"
 
 [node name="LevelEntryPoint2" parent="LevelDoors/C" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9)
 leveltitle = "C2"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/C/2/level.tscn"
 
 [node name="LevelEntryPoint3" parent="LevelDoors/C" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
 leveltitle = "C3"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/C/3/level.tscn"
 
 [node name="LevelEntryPoint4" parent="LevelDoors/C" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
 leveltitle = "C4"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/C/4/level.tscn"
 
 [node name="LevelEntryPoint5" parent="LevelDoors/C" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19)
 leveltitle = "C5"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/C/5/level.tscn"
 
 [node name="LevelEntryPoint6" parent="LevelDoors/C" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22)
 leveltitle = "C6"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/C/6/level.tscn"
 
 [node name="D" type="Node3D" parent="LevelDoors"]
 transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 0, 0, 0)
@@ -177,32 +177,32 @@ transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107
 [node name="LevelEntryPoint" parent="LevelDoors/D" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
 leveltitle = "D1"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/D/1/level.tscn"
 
 [node name="LevelEntryPoint2" parent="LevelDoors/D" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9)
 leveltitle = "D2"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/D/2/level.tscn"
 
 [node name="LevelEntryPoint3" parent="LevelDoors/D" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
 leveltitle = "D3"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/D/3/level.tscn"
 
 [node name="LevelEntryPoint4" parent="LevelDoors/D" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
 leveltitle = "D4"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/D/4/level.tscn"
 
 [node name="LevelEntryPoint5" parent="LevelDoors/D" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19)
 leveltitle = "D5"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/D/5/level.tscn"
 
 [node name="LevelEntryPoint6" parent="LevelDoors/D" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22)
 leveltitle = "D6"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/D/6/level.tscn"
 
 [node name="E" type="Node3D" parent="LevelDoors"]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0)
@@ -210,31 +210,31 @@ transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0)
 [node name="LevelEntryPoint" parent="LevelDoors/E" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
 leveltitle = "E1"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/E/1/level.tscn"
 
 [node name="LevelEntryPoint2" parent="LevelDoors/E" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9)
 leveltitle = "E2"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/E/2/level.tscn"
 
 [node name="LevelEntryPoint3" parent="LevelDoors/E" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
 leveltitle = "E3"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/E/3/level.tscn"
 
 [node name="LevelEntryPoint4" parent="LevelDoors/E" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
 leveltitle = "E4"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/E/4/level.tscn"
 
 [node name="LevelEntryPoint5" parent="LevelDoors/E" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19)
 leveltitle = "E5"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/E/5/level.tscn"
 
 [node name="LevelEntryPoint6" parent="LevelDoors/E" instance=ExtResource("3_1oxlh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22)
 leveltitle = "E6"
-level_scene_title = "res://Example/LevelTemplate/level.tscn"
+level_scene_title = "res://Levels/E/6/level.tscn"
 
 [connection signal="body_entered" from="LevelDoors/MrThawley/Area3DMrThawley" to="." method="_on_area_3d_mr_thawley_body_entered"]
