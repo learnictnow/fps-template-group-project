@@ -1,10 +1,11 @@
-extends Node3D
+extends Marker3D
 
-
+@export var leveltitle:String
+@export_file("*.tscn") var level_scene_title:String
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	GameManager.previous_scene = scene_file_path
+	$Label3D.text = leveltitle
 	pass # Replace with function body.
 
 
@@ -14,8 +15,5 @@ func _process(delta):
 
 
 func _on_area_3d_body_entered(body):
-	if body.is_in_group("Player"):
-		#body.global_position = $Marker3DPlayerSpawn.global_position
-		if body.has_method("death"):
-			body.death()
+	GameManager.change_scene(level_scene_title)
 	pass # Replace with function body.

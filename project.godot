@@ -13,8 +13,10 @@ config_version=5
 config/name="Fps-template-group-project"
 run/main_scene="res://Example/Menus/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-boot_splash/show_image=false
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://Example/Assets/images/boot_splash.png"
+config/icon="res://Example/Assets/images/kiwi.png"
+boot_splash/minimum_display_time=250
 
 [autoload]
 
