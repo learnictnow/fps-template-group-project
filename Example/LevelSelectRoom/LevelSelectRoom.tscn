@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://t4eb72lghhcs"]
+[gd_scene load_steps=9 format=3 uid="uid://t4eb72lghhcs"]
 
 [ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="1_6rwdk"]
 [ext_resource type="Script" path="res://Example/LevelSelectRoom/LevelSelectRoom.gd" id="1_pa0ev"]
 [ext_resource type="PackedScene" uid="uid://sgqd6i0yo8s7" path="res://Example/LevelSelectRoom/level_entry_point.tscn" id="3_1oxlh"]
+[ext_resource type="PackedScene" uid="uid://bo5e7pvmbxvck" path="res://PickupMelee.tscn" id="4_oact6"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_svkqy"]
 size = Vector2(55, 55)
@@ -42,7 +43,6 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 25,
 
 [node name="Player" parent="." node_paths=PackedStringArray("start_Marker3D") instance=ExtResource("1_6rwdk")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.1579, 0)
-visible = false
 start_Marker3D = NodePath("../Marker3DStartPosition")
 
 [node name="Marker3DStartPosition" type="Marker3D" parent="."]
@@ -236,5 +236,8 @@ level_scene_title = "res://Levels/E/5/level.tscn"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22)
 leveltitle = "E6"
 level_scene_title = "res://Levels/E/6/level.tscn"
+
+[node name="PickupMelee" parent="." instance=ExtResource("4_oact6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 1.5)
 
 [connection signal="body_entered" from="LevelDoors/MrThawley/Area3DMrThawley" to="." method="_on_area_3d_mr_thawley_body_entered"]
