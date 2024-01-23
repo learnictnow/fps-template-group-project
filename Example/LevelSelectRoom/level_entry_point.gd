@@ -5,6 +5,8 @@ extends Marker3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if GameManager.level_dict[leveltitle] == true:
+		$Area3D.process_mode = Node.PROCESS_MODE_DISABLED
 	$Label3D.text = leveltitle
 	pass # Replace with function body.
 

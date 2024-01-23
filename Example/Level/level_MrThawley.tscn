@@ -13,6 +13,7 @@ roughness = 0.0
 
 [node name="Level" type="Node3D"]
 script = ExtResource("1_2kk56")
+level_name = "Mr Thawley"
 
 [node name="Marker3DPlayerSpawn" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
