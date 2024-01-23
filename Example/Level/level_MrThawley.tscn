@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cflap0at0xydy"]
+[gd_scene load_steps=6 format=3 uid="uid://cflap0at0xydy"]
 
 [ext_resource type="Script" path="res://Example/LevelTemplate/level.gd" id="1_2kk56"]
 [ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="2_y1x86"]
+[ext_resource type="PackedScene" uid="uid://cpbsrhi3r4fsx" path="res://level_exit.tscn" id="3_buvdd"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_daoxt"]
 size = Vector2(100, 100)
@@ -38,5 +39,8 @@ polygon = PackedVector2Array(0, 0, 0, 100, 100, 100, 100, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+
+[node name="LevelExit" parent="." instance=ExtResource("3_buvdd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0828952, -1.75, 1.49754)
 
 [connection signal="body_entered" from="DeathPit/Area3D" to="." method="_on_area_3d_body_entered"]

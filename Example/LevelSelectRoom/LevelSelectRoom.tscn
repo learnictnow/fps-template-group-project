@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://t4eb72lghhcs"]
+[gd_scene load_steps=11 format=3 uid="uid://t4eb72lghhcs"]
 
 [ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="1_6rwdk"]
 [ext_resource type="Script" path="res://Example/LevelSelectRoom/LevelSelectRoom.gd" id="1_pa0ev"]
 [ext_resource type="PackedScene" uid="uid://sgqd6i0yo8s7" path="res://Example/LevelSelectRoom/level_entry_point.tscn" id="3_1oxlh"]
 [ext_resource type="PackedScene" uid="uid://bo5e7pvmbxvck" path="res://PickupMelee.tscn" id="4_oact6"]
+[ext_resource type="PackedScene" uid="uid://bhxip00osepyl" path="res://gun_target.tscn" id="5_5p73w"]
+[ext_resource type="PackedScene" uid="uid://cpbsrhi3r4fsx" path="res://level_exit.tscn" id="6_m38vc"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_svkqy"]
 size = Vector2(55, 55)
@@ -239,5 +241,11 @@ level_scene_title = "res://Levels/E/6/level.tscn"
 
 [node name="PickupMelee" parent="." instance=ExtResource("4_oact6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 1.5)
+
+[node name="GunTarget" parent="." instance=ExtResource("5_5p73w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -1.5)
+
+[node name="LevelExit" parent="." instance=ExtResource("6_m38vc")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15, 0, 0)
 
 [connection signal="body_entered" from="LevelDoors/MrThawley/Area3DMrThawley" to="." method="_on_area_3d_mr_thawley_body_entered"]

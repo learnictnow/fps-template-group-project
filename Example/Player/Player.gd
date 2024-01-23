@@ -113,8 +113,8 @@ func primary_fire():
 		var collision = space.intersect_ray(query)
 		if collision:
 
-			print(collision.collider.name)
 			if collision.collider.is_in_group("Target"):
+				print(collision.collider.name)
 				collision.collider.queue_free()
 				#if $PlayerHud.has_method("update_score"):
 					#$PlayerHud.update_score("SHOTS", 1)
