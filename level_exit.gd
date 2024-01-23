@@ -1,5 +1,7 @@
 extends Node3D
 
+var level_name
+
 signal level_complete
 
 # Called when the node enters the scene tree for the first time.
