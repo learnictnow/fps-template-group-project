@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgwev25opgt5b"]
+
+[ext_resource type="MeshLibrary" uid="uid://dg20fuqc77smi" path="res://Example/GridMapExample/MeshLibrarySpace.tres" id="1_kdpwg"]
+[ext_resource type="PackedScene" uid="uid://rxb4kpt81cow" path="res://Example/Player/player.tscn" id="2_i2a3n"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gaxy7"]
+size = Vector2(50, 50)
+
+[node name="GridMapLevel" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_kdpwg")
+cell_size = Vector3(1, 1, 1)
+data = {
+"cells": PackedInt32Array(65535, 1, 0, 65535, 2, 0, 65535, 3, 0, 65535, 0, 1, 1, 0, 4, 0, 0, 0, 65535, 4, 5, 1, 1, 5)
+}
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+use_collision = true
+mesh = SubResource("PlaneMesh_gaxy7")
+
+[node name="Player" parent="." node_paths=PackedStringArray("start_Marker3D") instance=ExtResource("2_i2a3n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34644, 0, 6.88269)
+start_Marker3D = NodePath("../Marker3D")
+
+[node name="Marker3D" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 6)
