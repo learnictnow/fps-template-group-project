@@ -42,6 +42,80 @@ polygon = PackedVector2Array(0, 0, 0, 100, 100, 100, 100, 0)
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 
 [node name="LevelExit" parent="." instance=ExtResource("3_buvdd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0828952, -1.75, 1.49754)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0828952, -0.25, -20.5025)
+
+[node name="Environment" type="CSGCombiner3D" parent="."]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Environment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -2, -4)
+size = Vector3(2, 0.5, 5)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Environment/CSGBox3D"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 1.5, 0, -3.6)
+size = Vector3(2, 0.5, 5)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Environment"]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 2.7, -2, -10.7)
+size = Vector3(2, 0.5, 5)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Environment/CSGBox3D2"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 1.5, 0, -3.6)
+size = Vector3(2, 0.5, 5)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Environment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, -21)
+size = Vector3(10, 0.5, 10)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Environment/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -5)
+size = Vector3(10, 5, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Environment/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 5)
+size = Vector3(10, 5, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Environment/CSGBox3D3/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8, 0)
+operation = 2
+size = Vector3(2, 2, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Environment/CSGBox3D3/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.1, 0)
+operation = 2
+radius = 1.0
+sides = 32
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Environment/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, 0)
+size = Vector3(1, 5, 10)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Environment/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 0)
+size = Vector3(1, 5, 10)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Environment/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, -5)
+radius = 2.0
+height = 7.0
+sides = 32
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Environment/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, -5)
+radius = 2.0
+height = 7.0
+sides = 32
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Environment/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, 5)
+radius = 2.0
+height = 7.0
+sides = 32
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Environment/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 5)
+radius = 2.0
+height = 7.0
+sides = 32
 
 [connection signal="body_entered" from="DeathPit/Area3D" to="." method="_on_area_3d_body_entered"]

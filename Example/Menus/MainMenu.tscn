@@ -52,9 +52,9 @@ focus_neighbor_bottom = NodePath("../ButtonAbout")
 focus_next = NodePath("../ButtonAbout")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
-theme_override_styles/normal = SubResource("StyleBoxFlat_okfwc")
-theme_override_styles/hover = ExtResource("2_ul7i0")
 theme_override_styles/focus = ExtResource("2_ul7i0")
+theme_override_styles/hover = ExtResource("2_ul7i0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_okfwc")
 text = "Play"
 
 [node name="ButtonAbout" type="Button" parent="CenterContainer/VBoxContainer"]
@@ -64,8 +64,8 @@ focus_neighbor_bottom = NodePath("../ButtonQuit")
 focus_next = NodePath("../ButtonQuit")
 focus_previous = NodePath("../ButtonPlay")
 theme_override_font_sizes/font_size = 36
-theme_override_styles/hover = ExtResource("2_ul7i0")
 theme_override_styles/focus = ExtResource("2_ul7i0")
+theme_override_styles/hover = ExtResource("2_ul7i0")
 text = "About"
 
 [node name="ButtonQuit" type="Button" parent="CenterContainer/VBoxContainer"]
@@ -74,9 +74,9 @@ focus_neighbor_top = NodePath("../ButtonAbout")
 focus_next = NodePath("../ButtonPlay")
 focus_previous = NodePath("../ButtonAbout")
 theme_override_font_sizes/font_size = 36
-theme_override_styles/normal = SubResource("StyleBoxFlat_kbp8x")
-theme_override_styles/hover = ExtResource("2_ul7i0")
 theme_override_styles/focus = ExtResource("2_ul7i0")
+theme_override_styles/hover = ExtResource("2_ul7i0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_kbp8x")
 text = "Quit"
 
 [node name="Icon" type="Sprite2D" parent="."]
